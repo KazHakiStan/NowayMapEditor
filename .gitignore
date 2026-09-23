@@ -1,0 +1,9 @@
+workspace/*
+!workspace/maps/.gitkeep
+!workspace/tilesets/.gitkeep
+!workspace/sprites/.gitkeep
+!workspace/props/.gitkeep
+
+.DS_Store
+
+imgui.ini
