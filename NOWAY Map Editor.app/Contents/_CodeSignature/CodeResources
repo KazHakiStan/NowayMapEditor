@@ -3,32 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>files</key>
-	<dict>
-		<key>Resources/res/fonts/menu.ttf</key>
-		<data>
-		3qnXAsbTOh1msTL0wTVB5vl7c2c=
-		</data>
-		<key>Resources/res/icons/noway_icon.png</key>
-		<data>
-		uhuqY+CvP1e+7Y6zT0RXj+zBiEI=
-		</data>
-		<key>Resources/res/images/check.jpg</key>
-		<data>
-		B5Xv5htOms3X9hhYYe03YV3KEYU=
-		</data>
-		<key>Resources/res/maps/test_room.nwmap</key>
-		<data>
-		AC/XrhKkYFopJcNgAajcJCe06yc=
-		</data>
-		<key>Resources/res/tilesets/elevator_room.png</key>
-		<data>
-		UcQmwtR+mzN82q+Bhy+nvaocGqQ=
-		</data>
-		<key>Resources/res/tilesets/test.png</key>
-		<data>
-		b94hD5Md34izyb7HcV5i5YWIxQc=
-		</data>
-	</dict>
+	<dict/>
 	<key>files2</key>
 	<dict>
 		<key>Frameworks/libSDL2-2.0.0.dylib</key>
@@ -366,48 +341,6 @@
 		<dict>
 			<key>symlink</key>
 			<string>libzstd.1.5.7.dylib</string>
-		</dict>
-		<key>Resources/res/fonts/menu.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			V+lWJ/02/idA5e6Kkf8a50+yFt+VgL0j4w1ncoFHJ74=
-			</data>
-		</dict>
-		<key>Resources/res/icons/noway_icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			APipypwIEVkN9aSoT6G158kHw2CRmklSC2oJT6XYtAc=
-			</data>
-		</dict>
-		<key>Resources/res/images/check.jpg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			05m3X0bd9Q+jeRvjdAlf3K1r6C26Yn2d35mxTNU4nqQ=
-			</data>
-		</dict>
-		<key>Resources/res/maps/test_room.nwmap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BR9I94473weOyGrcwmzyH7NseQQtUrt240b069TlnqM=
-			</data>
-		</dict>
-		<key>Resources/res/tilesets/elevator_room.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8kaWrJCIzAaKYn3vRnz+jFbWqtgD37r3N3Ou91faRhQ=
-			</data>
-		</dict>
-		<key>Resources/res/tilesets/test.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			16jeLfYxoFAuWA+7ys/gxBz43hk+1KD/j0L3Kw3x2Uk=
-			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

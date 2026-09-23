@@ -1,0 +1,4 @@
+NWTILESET 1
+texture "res/textures/elevator_room.png"
+tile_size 32 32
+atlas 10 10

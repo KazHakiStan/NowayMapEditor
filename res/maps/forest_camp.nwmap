@@ -1,0 +1,42 @@
+NWMAP 2
+size 4 3
+tile_size 32 32
+
+tilesets 2
+tileset "res/tilesets/forest_ground.nwtileset"
+tileset "res/tilesets/forest_details.nwtileset"
+
+layers 3
+
+layer "GroundBase"
+type visual
+visible true
+tileset "res/tilesets/forest_ground.nwtileset"
+size 4 3
+tiles 12
+0 0 0 0
+0 0 0 0
+0 0 0 0
+end_layer
+
+layer "GrassOverlay"
+type visual
+visible true
+tileset "res/tilesets/forest_ground.nwtileset"
+size 4 3
+tiles 12
+-1 -1 1 -1
+-1 1 -1 -1
+-1 -1 -1 1
+end_layer
+
+layer "Details"
+type visual
+visible true
+tileset "res/tilesets/forest_details.nwtileset"
+size 4 3
+tiles 12
+-1 -1 -1 -1
+-1 0 -1 -1
+-1 -1 2 -1
+end_layer
