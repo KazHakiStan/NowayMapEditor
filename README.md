@@ -10,27 +10,37 @@ Do not download it as ZIP.
 
 ## Run
 
-Open:
-
-NOWAY Map Editor.app
-
-## Update
+### Windows
 
 Double-click:
 
-Update.command
+windows/Launch.bat
 
-The editor will update using git pull.
+### macOS
+
+Double-click:
+
+macos/Launch.command
+
+## Update
+
+### Windows
+
+windows/Update.bat
+
+### macOS
+
+macos/Update.command
 
 ## Your files
 
-Do not store work inside the .app bundle.
-
-Use:
+All project work belongs in:
 
 workspace/maps
 workspace/tilesets
 workspace/sprites
 workspace/props
 
-The workspace directory is not overwritten by editor updates.
+Do not store project files inside the application folder.
+
+The workspace is not overwritten by editor updates.

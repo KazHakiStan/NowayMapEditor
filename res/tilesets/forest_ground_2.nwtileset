@@ -1,0 +1,4 @@
+NWTILESET 1
+texture "res/textures/forest_ground_2.png"
+tile_size 32 32
+atlas 8 8

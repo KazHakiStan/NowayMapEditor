@@ -1,0 +1,4 @@
+NWTILESET 1
+texture "res/textures/forest_grass_overlay.png"
+tile_size 32 32
+atlas 8 8
