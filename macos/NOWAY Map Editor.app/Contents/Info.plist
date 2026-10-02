@@ -9,7 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string></string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>noway_icon.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.noway.mapeditor</string>
 	<key>CFBundleInfoDictionaryVersion</key>

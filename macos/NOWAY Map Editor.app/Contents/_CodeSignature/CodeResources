@@ -3,7 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>files</key>
-	<dict/>
+	<dict>
+		<key>Resources/noway_icon.icns</key>
+		<data>
+		YRFA41tEEZb75hHVAXjlFVkXnxA=
+		</data>
+	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Frameworks/libSDL2-2.0.0.dylib</key>
@@ -47,19 +52,19 @@
 			<key>symlink</key>
 			<string>libSDL3.0.dylib</string>
 		</dict>
-		<key>Frameworks/libaom.3.14.1.dylib</key>
+		<key>Frameworks/libaom.3.15.1.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			1LI8jcH5O3lIS+xVL9mZ6klsRDM=
+			moWn5yXnHnOc6WOxTKDMMw7qoro=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"d4b23c8dc1f93b79484bec552fd999ea496c4433"</string>
+			<string>cdhash H"9a85a7e725e71e739ce963b14ca0cc330eeaa2ba"</string>
 		</dict>
 		<key>Frameworks/libaom.3.dylib</key>
 		<dict>
 			<key>symlink</key>
-			<string>libaom.3.14.1.dylib</string>
+			<string>libaom.3.15.1.dylib</string>
 		</dict>
 		<key>Frameworks/libavif.16.4.2.dylib</key>
 		<dict>
@@ -245,10 +250,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			qFWrsGQYms8iqawc0459OxiOacg=
+			7JEVCM/PaItbijezqwSPM2Ny7tU=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"a855abb064189acf22a9ac1cd38e7d3b188e69c8"</string>
+			<string>cdhash H"ec911508cfcf688b5b8a37b3ab048f336372eed5"</string>
 		</dict>
 		<key>Frameworks/libpcre2-8.0.dylib</key>
 		<dict>
@@ -291,14 +296,28 @@
 			<key>requirement</key>
 			<string>cdhash H"02ae71da406837abd760f1b33b1825bef2cb0f0d"</string>
 		</dict>
+		<key>Frameworks/libtinyxml2.11.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			FEGW5TpQnyXsz5sPPQx/YU/BCdE=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"144196e53a509f25eccf9b0f3d0c7f614fc109d1"</string>
+		</dict>
+		<key>Frameworks/libtinyxml2.11.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libtinyxml2.11.0.0.dylib</string>
+		</dict>
 		<key>Frameworks/libvmaf.3.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			ye5PzDOqSIRCe34JxwBN2XirqwY=
+			nb7MaSS/2gnZzhMHKDtnTht76ag=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"c9ee4fcc33aa4884427b7e09c7004dd978abab06"</string>
+			<string>cdhash H"9dbecc6924bfda09d9ce1307283b674e1b7be9a8"</string>
 		</dict>
 		<key>Frameworks/libwebp.7.2.0.dylib</key>
 		<dict>
@@ -341,6 +360,13 @@
 		<dict>
 			<key>symlink</key>
 			<string>libzstd.1.5.7.dylib</string>
+		</dict>
+		<key>Resources/noway_icon.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+0PZNPty25aH9mWN2CjquN8DN9uh6BcEyS2aiyJO5UU=
+			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

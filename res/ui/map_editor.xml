@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UiDocument>
+    <Styles>
+        <Style name="editor-menu-button" type="Button" size="48 22" />
+        <Style name="editor-menu-text" type="Text" sizeMode="fill fill" fontSize="11" hAlign="center" vAlign="center" />
+        <Style name="editor-small-button" type="Button" size="44 22" />
+        <Style name="editor-small-button-text" type="Text" sizeMode="fill fill" fontSize="10" hAlign="center" vAlign="center" />
+        <Style name="editor-label" type="Text" size="140 14" fontSize="10" />
+    </Styles>
+
+    <Layout id="rootEditor">
+
+        <!-- ============================= -->
+        <!-- Top menu                      -->
+        <!-- ============================= -->
+
+        <Panel id="pnlToolbar" size="640 28" sizeMode="fill fixed">
+            <Stack id="stkButtons" sizeMode="fill fill" direction="horizontal" spacing="2" paddingLeft="4" paddingTop="3" paddingRight="4" paddingBottom="3">
+                <Button id="btnFile" class="editor-menu-button">
+                    <Text class="editor-menu-text" text="File" />
+                </Button>
+                <Button id="btnEdit" class="editor-menu-button">
+                    <Text class="editor-menu-text" text="Edit" />
+                </Button>
+                <Button id="btnView" class="editor-menu-button">
+                    <Text class="editor-menu-text" text="View" />
+                </Button>
+                <Button id="btnTileset" size="64 22">
+                    <Text class="editor-menu-text" text="Tileset" />
+                </Button>
+                <Button id="btnDualGrid" size="76 22">
+                    <Text class="editor-menu-text" text="Dual Grid" />
+                </Button>
+            </Stack>
+        </Panel>
+
+        <!-- ============================= -->
+        <!-- Tilesets / Palette            -->
+        <!-- ============================= -->
+
+        <Panel id="tilesetsPanel" size="132 312" offset="0 28">
+            <Text text="Tilesets" fontSize="11" offset="8 6" size="116 18" />
+            <Button id="btnAddTileset" offset="8 27" size="116 22">
+                <Text class="editor-menu-text" text="Add Tileset..." />
+            </Button>
+            <ScrollView id="scrollTilesets" offset="8 53" size="116 64" wheelStep="18">
+                <Panel size="116 1" />
+            </ScrollView>
+            <Text text="Palette" fontSize="9" offset="8 122" size="116 18" />
+            <Text id="txtPaletteState" text="Assign tileset&#10;to layer" fontSize="9" offset="8 142" size="116 32" />
+            <ScrollView id="scrollTilePalette" offset="8 171" size="116 132" wheelStep="36">
+                <Panel size="116 1" />
+            </ScrollView>
+        </Panel>
+
+        <!-- ============================= -->
+        <!-- Layers                        -->
+        <!-- ============================= -->
+
+        <Panel id="layersPanel" size="156 312" anchor="1 0" hotSpot="1 0" offset="0 28">
+            <Text text="Layers" fontSize="11" offset="8 6" size="140 18" />
+            <ScrollView id="scrollLayers" offset="8 28" size="140 88" wheelStep="20">
+                <Panel size="140 1" />
+            </ScrollView>
+            <Text class="editor-label" text="Name" offset="8 122" />
+            <TextInput id="inputLayerName" offset="8 137" size="140 22" fontSize="11" />
+            <Text class="editor-label" text="Type" offset="8 164" />
+            <ComboBox id="comboLayerType" offset="8 179" size="140 22" fontSize="11" rowHeight="22" overlay="overlayEditor" />
+            <Text class="editor-label" text="Tileset" offset="8 206" />
+            <ComboBox id="comboLayerTileset" offset="8 221" size="140 22" fontSize="11" rowHeight="22" maxVisibleRows="6" overlay="overlayEditor" />
+            <Button id="btnLayerAdd" class="editor-small-button" offset="8 250">
+                <Text class="editor-small-button-text" text="Add" />
+            </Button>
+            <Button id="btnLayerClear" class="editor-small-button" offset="56 250">
+                <Text class="editor-small-button-text" text="Clear" />
+            </Button>
+            <Button id="btnLayerDelete" class="editor-small-button" offset="104 250">
+                <Text class="editor-small-button-text" text="Delete" />
+            </Button>
+            <Button id="btnLayerUp" offset="8 278" size="66 22">
+                <Text class="editor-small-button-text" text="Up" />
+            </Button>
+            <Button id="btnLayerDown" offset="82 278" size="66 22" >
+                <Text class="editor-small-button-text" text="Down" />
+            </Button>
+        </Panel>
+
+        <!-- ============================= -->
+        <!-- Status                        -->
+        <!-- ============================= -->
+
+        <Panel id="statusPanel" size="640 20" sizeMode="fill fixed" anchor="0 1" hotSpot="0 1">
+            <Text id="txtStatus" text="Ready" fontSize="11" offset="6 3" size="380 16" />
+            <Text id="txtDocument" text="Untitled" fontSize="11" hAlign="right" anchor="1 0" hotSpot="1 0" offset="-6 3" size="220 16" />
+        </Panel>
+
+        <!-- ============================= -->
+        <!-- Popup host                    -->
+        <!-- ============================= -->
+
+        <Overlay id="overlayEditor" sizeMode="fill fill" />
+    </Layout>
+
+    <Popups>
+        <Popup id="editorSettings">
+            <Panel size="220 240" anchor="0.5 0" hotSpot="0.5 0" offset="0 34">
+                <Text text="Editor Settings" fontSize="11" offset="10 8" size="200 18" />
+                <Text text="Map W" fontSize="10" offset="10 34" size="80 20" vAlign="center" />
+                <TextInput id="settingsMapWidth" fontSize="11" offset="92 34" size="118 20" />
+                <Text text="Map H" fontSize="10" offset="10 58" size="80 20" vAlign="center" />
+                <TextInput id="settingsMapHeight" fontSize="11" offset="92 58" size="118 20" />
+                <Text text="Tile W" fontSize="10" offset="10 82" size="80 20" vAlign="center" />
+                <TextInput id="settingsTileWidth" fontSize="11" offset="92 82" size="118 20" />
+                <Text text="Tile H" fontSize="10" offset="10 106" size="80 20" vAlign="center" />
+                <TextInput id="settingsTileHeight" fontSize="11" offset="92 106" size="118 20" />
+                <Text text="Grid px" fontSize="10" offset="10 130" size="80 20" vAlign="center" />
+                <Button id="settingsGridMinus" offset="92 130" size="32 20">
+                    <Text class="editor-small-button-text" text="-" />
+                </Button>
+                <Text id="settingsGridValue" text="1" fontSize="11" hAlign="center" vAlign="center" offset="128 130" size="38 20" />
+                <Button id="settingsGridPlus" offset="170 130" size="40 20">
+                    <Text class="editor-small-button-text" text="+" />
+                </Button>
+                <Text text="Camera" fontSize="10" offset="10 154" size="80 20" vAlign="center" />
+                <TextInput id="settingsCameraSpeed" fontSize="11" offset="92 154" size="118 20" />
+                <Button id="settingsResize" offset="10 188" size="96 24">
+                    <Text class="editor-small-button-text" text="Resize Map" />
+                </Button>
+                <Button id="settingsClose" offset="114 188" size="96 24">
+                    <Text class="editor-small-button-text" text="Close" />
+                </Button>
+                <Text text="Resize applies map/tile dimensions." fontSize="9" offset="10 216" size="200 16" />
+            </Panel>
+        </Popup>
+
+        <Popup id="asepriteImport">
+            <Panel size="240 214" anchor="0.5 0" hotSpot="0.5 0" offset="0 36">
+                <Text text="Import Aseprite Tileset" fontSize="8" offset="10 8" size="220 16" />
+                <Text id="asepriteSource" text="" fontSize="8" overflow="clip" offset="10 28" size="220 16" />
+                <Text text="Output name" fontSize="8" vAlign="center" offset="10 52" size="80 20" />
+                <TextInput id="asepriteOutput" fontSize="8" offset="96 52" size="134 20" />
+                <Text text="Tile W" fontSize="8" vAlign="center" offset="10 78" size="80 20" />
+                <TextInput id="asepriteTileWidth" text="32" fontSize="8" offset="96 78" size="134 20" />
+                <Text text="Tile H" fontSize="8" vAlign="center" offset="10 104" size="80 20" />
+                <TextInput id="asepriteTileHeight" text="32" fontSize="8" offset="96 104" size="134 20" />
+                <Checkbox id="asepriteDualGrid" checked="false" offset="96 130" size="18 18" />
+                <Text text="Dual Grid" fontSize="8" vAlign="center" offset="118 130" size="100 18" />
+                <Text text="Output: workspace/tilesets" fontSize="8" offset="10 154" size="220 16" />
+                <Button id="asepriteImportButton" offset="10 180" size="104 24">
+                    <Text class="editor-small-button-text" text="Import" />
+                </Button>
+                <Button id="asepriteCancelButton" offset="126 180" size="104 24">
+                    <Text class="editor-small-button-text" text="Cancel" />
+                </Button>
+            </Panel>
+        </Popup>
+
+        <Popup id="dualGridRules">
+            <Panel id="dualGridRulesPanel" size="500 320" anchor="0.5 0" hotSpot="0.5 0" offset="0 34" />
+        </Popup>
+    </Popups>
+</UiDocument>
