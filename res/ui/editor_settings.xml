@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UiDocument>
+    <Styles>
+        <Style name="settings-button" type="Button" size="92 24" />
+        <Style name="settings-button-text" type="Text" sizeMode="fill fill" fontSize="10" hAlign="center" vAlign="center" />
+        <Style name="settings-label" type="Text" size="116 20" fontSize="10" vAlign="center" />
+        <Style name="settings-input" type="TextInput" size="354 20" fontSize="9" />
+    </Styles>
+
+    <Layout id="rootEditorSettings">
+        <Panel sizeMode="fill fill" />
+
+        <Text text="SETTINGS"
+              size="300 30"
+              fontSize="22"
+              anchor="0.5 0"
+              hotSpot="0.5 0"
+              offset="0 18"
+              hAlign="center"
+              vAlign="center" />
+        <Panel size="586 240" anchor="0.5 0" hotSpot="0.5 0" offset="0 58">
+            <Text class="settings-label" text="Aseprite" offset="12 12" />
+            <TextInput id="inputAseprite" class="settings-input" offset="128 12" />
+            <Button id="btnBrowseAseprite" class="settings-button" size="76 20" offset="492 12">
+                <Text class="settings-button-text" text="Browse..." />
+            </Button>
+
+            <Text class="settings-label" text="Project root" offset="12 42" />
+            <TextInput id="inputProjectRoot" class="settings-input" size="440 20" offset="128 42" />
+
+            <Text class="settings-label" text="Maps" offset="12 72" />
+            <TextInput id="inputMaps" class="settings-input" size="440 20" offset="128 72" />
+
+            <Text class="settings-label" text="Tilesets" offset="12 102" />
+            <TextInput id="inputTilesets" class="settings-input" size="440 20" offset="128 102" />
+
+            <Text class="settings-label" text="Sprites" offset="12 132" />
+            <TextInput id="inputSprites" class="settings-input" size="440 20" offset="128 132" />
+
+            <Text class="settings-label" text="Props" offset="12 162" />
+            <TextInput id="inputProps" class="settings-input" size="440 20" offset="128 162" />
+
+            <Text text="Asset directories are project-relative. Project root and Aseprite are machine-local."
+                  size="556 16"
+                  fontSize="8"
+                  offset="12 194" />
+
+            <Text id="txtSettingsStatus"
+                  text=""
+                  size="556 18"
+                  fontSize="8"
+                  offset="12 214"
+                  overflow="clip" />
+        </Panel>
+        <Stack direction="horizontal" spacing="8" size="292 24" anchor="0.5 1" hotSpot="0.5 1" offset="0 -24">
+            <Button id="btnDefaultSettings" class="settings-button">
+                <Text class="settings-button-text" text="DEFAULTS" />
+            </Button>
+            <Button id="btnApplySettings" class="settings-button">
+                <Text class="settings-button-text" text="APPLY" />
+            </Button>
+            <Button id="btnBackToMainMenu" class="settings-button">
+                <Text class="settings-button-text" text="BACK" />
+            </Button>
+        </Stack>
+    </Layout>
+</UiDocument>

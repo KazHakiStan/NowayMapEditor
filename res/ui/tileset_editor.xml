@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UiDocument>
+    <Styles>
+        <Style name="tileset-toolbar-button" type="Button" size="82 22" />
+        <Style name="tileset-button-text" type="Text" sizeMode="fill fill" fontSize="10" hAlign="center" vAlign="center" />
+        <Style name="tileset-label" type="Text" size="40 20" fontSize="9" vAlign="center" />
+        <Style name="tileset-input" type="TextInput" size="146 20" fontSize="9" />
+    </Styles>
+
+    <Layout id="rootTilesetEditor">
+        <Panel sizeMode="fill fill" />
+
+        <Panel size="640 32" sizeMode="fill fixed">
+            <Button id="btnBackToMainMenu" class="tileset-toolbar-button" size="64 22" offset="4 5">
+                <Text class="tileset-button-text" text="BACK" />
+            </Button>
+            <Button id="btnOpenTileset" class="tileset-toolbar-button" offset="72 5">
+                <Text class="tileset-button-text" text="OPEN..." />
+            </Button>
+            <Button id="btnSaveStamps" class="tileset-toolbar-button" offset="158 5">
+                <Text class="tileset-button-text" text="SAVE" />
+            </Button>
+            <Text id="txtTilesetDocument"
+                  text="No tileset"
+                  size="384 22"
+                  fontSize="10"
+                  hAlign="right"
+                  vAlign="center"
+                  anchor="1 0"
+                  hotSpot="1 0"
+                  offset="-8 5"
+                  overflow="clip" />
+        </Panel>
+
+        <Panel offset="8 36" size="400 300">
+            <Text id="txtAtlasHint"
+                  text="Open a .nwtileset to begin"
+                  size="360 24"
+                  fontSize="11"
+                  anchor="0.5 0.5"
+                  hotSpot="0.5 0.5"
+                  hAlign="center"
+                  vAlign="center" />
+        </Panel>
+
+        <Panel offset="416 36" size="216 300">
+            <Text text="STAMPS" fontSize="11" offset="12 8" size="192 18" />
+
+            <ScrollView id="scrollStamps"
+                        offset="12 28"
+                        size="192 100"
+                        wheelStep="22">
+                <Panel size="192 1" />
+            </ScrollView>
+
+            <Text class="tileset-label" text="Id" offset="12 134" />
+            <TextInput id="inputStampId"
+                       class="tileset-input"
+                       offset="58 134" />
+
+            <Text class="tileset-label" text="Name" offset="12 160" />
+            <TextInput id="inputStampName"
+                       class="tileset-input"
+                       offset="58 160" />
+
+            <Text id="txtSelection"
+                  text="Selection: none"
+                  fontSize="9"
+                  offset="12 188"
+                  size="192 18" />
+
+            <Button id="btnCreateStamp" size="92 22" offset="12 212">
+                <Text class="tileset-button-text" text="CREATE" />
+            </Button>
+            <Button id="btnApplyStamp" size="92 22" offset="112 212">
+                <Text class="tileset-button-text" text="APPLY NAME" />
+            </Button>
+
+            <Button id="btnReplaceStamp" size="92 22" offset="12 240">
+                <Text class="tileset-button-text" text="REPLACE" />
+            </Button>
+            <Button id="btnDeleteStamp" size="92 22" offset="112 240">
+                <Text class="tileset-button-text" text="DELETE" />
+            </Button>
+
+            <Text text="LMB drag on atlas = rectangular tile selection"
+                  fontSize="8"
+                  offset="12 270"
+                  size="192 18" />
+        </Panel>
+
+        <Panel size="640 20" sizeMode="fill fixed" anchor="0 1" hotSpot="0 1">
+            <Text id="txtTilesetStatus"
+                  text="Ready"
+                  fontSize="9"
+                  offset="6 3"
+                  size="628 16"
+                  overflow="clip" />
+        </Panel>
+    </Layout>
+</UiDocument>

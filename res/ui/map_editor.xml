@@ -26,7 +26,7 @@
                     <Text class="editor-menu-text" text="View" />
                 </Button>
                 <Button id="btnTileset" size="64 22">
-                    <Text class="editor-menu-text" text="Tileset" />
+                    <Text class="editor-menu-text" text="Import" />
                 </Button>
                 <Button id="btnDualGrid" size="76 22">
                     <Text class="editor-menu-text" text="Dual Grid" />
@@ -34,11 +34,13 @@
             </Stack>
         </Panel>
 
+        <ComboBox id="comboPaletteMode" offset="8 31" size="116 22" fontSize="10" rowHeight="22" maxVisibleRows="4" overlay="overlayEditor" />
+
         <!-- ============================= -->
         <!-- Tilesets / Palette            -->
         <!-- ============================= -->
 
-        <Panel id="tilesetsPanel" size="132 312" offset="0 28">
+        <Panel id="tilesetsPanel" size="132 284" offset="0 56">
             <Text text="Tilesets" fontSize="11" offset="8 6" size="116 18" />
             <Button id="btnAddTileset" offset="8 27" size="116 22">
                 <Text class="editor-menu-text" text="Add Tileset..." />
@@ -48,7 +50,24 @@
             </ScrollView>
             <Text text="Palette" fontSize="9" offset="8 122" size="116 18" />
             <Text id="txtPaletteState" text="Assign tileset&#10;to layer" fontSize="9" offset="8 142" size="116 32" />
-            <ScrollView id="scrollTilePalette" offset="8 171" size="116 132" wheelStep="36">
+            <ScrollView id="scrollTilePalette" offset="8 171" size="116 105" wheelStep="36">
+                <Panel size="116 1" />
+            </ScrollView>
+            <Button id="btnReloadStamps" offset="8 253" size="54 22">
+                <Text class="editor-small-button-text" text="Reload" />
+            </Button>
+            <Button id="btnSaveStamps" offset="70 253" size="54 22">
+                <Text class="editor-small-button-text" text="Save" />
+            </Button>
+        </Panel>
+
+        <!-- ============================= -->
+        <!-- Lighting Palette              -->
+        <!-- ============================= -->
+
+        <Panel id="lightingPanel" size="132 284" offset="0 56">
+            <Text text="Lighting" fontSize="11" offset="8 6" size="116 18" />
+            <ScrollView id="scrollLightingPalette" offset="8 27" size="116 248" wheelStep="24">
                 <Panel size="116 1" />
             </ScrollView>
         </Panel>
@@ -145,7 +164,7 @@
                 <TextInput id="asepriteTileHeight" text="32" fontSize="8" offset="96 104" size="134 20" />
                 <Checkbox id="asepriteDualGrid" checked="false" offset="96 130" size="18 18" />
                 <Text text="Dual Grid" fontSize="8" vAlign="center" offset="118 130" size="100 18" />
-                <Text text="Output: workspace/tilesets" fontSize="8" offset="10 154" size="220 16" />
+                <Text id="asepriteOutputDirectory" text="Output:" fontSize="8" offset="10 154" size="220 16" />
                 <Button id="asepriteImportButton" offset="10 180" size="104 24">
                     <Text class="editor-small-button-text" text="Import" />
                 </Button>

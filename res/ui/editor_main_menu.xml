@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UiDocument>
+    <Styles>
+        <Style name="editor-main-button" type="Button" size="196 34" />
+        <Style name="editor-main-button-text" type="Text" sizeMode="fill fill" fontSize="16" hAlign="center" vAlign="center" />
+    </Styles>
+
+    <Layout id="rootEditorMainMenu">
+        <Panel sizeMode="fill fill" />
+
+        <Text text="NOWAY EDITOR"
+              size="300 34"
+              fontSize="24"
+              anchor="0.5 0.5"
+              hotSpot="0.5 0.5"
+              offset="0 -112"
+              hAlign="center"
+              vAlign="center" />
+
+        <Text text="AUTHORING TOOLS"
+              size="220 18"
+              fontSize="10"
+              anchor="0.5 0.5"
+              hotSpot="0.5 0.5"
+              offset="0 -82"
+              hAlign="center"
+              vAlign="center" />
+
+        <Stack direction="vertical" spacing="8" size="196 160" anchor="0.5 0.5" hotSpot="0.5 0.5" offset="0 32">
+            <Button id="btnMapEditor" class="editor-main-button"><Text class="editor-main-button-text" text="MAP EDITOR" /></Button>
+            <Button id="btnTilesetEditor" class="editor-main-button"><Text class="editor-main-button-text" text="TILESET EDITOR" /></Button>
+            <Button id="btnEditorSettings" class="editor-main-button"><Text class="editor-main-button-text" text="SETTINGS" /></Button>
+            <Button id="btnEditorExit" class="editor-main-button"><Text class="editor-main-button-text" text="EXIT" /></Button>
+        </Stack>
+    </Layout>
+</UiDocument>

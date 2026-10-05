@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UiDocument>
+    <Styles>
+        <Style name="settings-tab" type="Button" size="108 30" normalColor="#231615E6" hoverColor="#522824F2" pressedColor="#783F3BFF" disabledColor="#31262688" />
+        <Style name="settings-tab-text" type="Text" size="108 16" fontSize="14" color="#D0A798" anchor="0.5 0.5" hotSpot="0.5 0.5" hAlign="center" vAlign="center" />
+        <Style name="settings-option" type="Button" size="118 28" normalColor="#231615E6" hoverColor="#522824F2" pressedColor="#783F3BFF" disabledColor="#31262688" />
+        <Style name="settings-option-text" type="Text" size="118 15" fontSize="13" color="#D0A798" anchor="0.5 0.5" hotSpot="0.5 0.5" hAlign="center" vAlign="center" />
+        <Style name="settings-label" type="Text" size="480 18" fontSize="15" color="#D0A798" hAlign="left" vAlign="center" />
+    </Styles>
+
+    <Layout id="rootSettings">
+        <Panel id="pnlSettingsBackground" sizeMode="fill" color="#100909FA" />
+        <Panel id="pnlSettingsContent" size="560 300" anchor="0.5 0.5" hotSpot="0.5 0.5" color="#231615EE" />
+
+        <Text id="txtSettingsTitle" text="SETTINGS" size="560 28" fontSize="24" color="#EEBB88" anchor="0.5 0.5" hotSpot="0.5 0.5" offset="0 -150" hAlign="center" vAlign="center" />
+
+        <Stack id="stkSettingsTabs" direction="horizontal" spacing="8" size="456 30" anchor="0.5 0.5" hotSpot="0.5 0.5" offset="0 -112">
+            <Button id="btnTabGraphics" class="settings-tab"><Text id="txtTabGraphics" class="settings-tab-text" text="GRAPHICS" /></Button>
+            <Button id="btnTabGameplay" class="settings-tab"><Text id="txtTabGameplay" class="settings-tab-text" text="GAMEPLAY" /></Button>
+            <Button id="btnTabAudio" class="settings-tab"><Text id="txtTabAudio" class="settings-tab-text" text="AUDIO" /></Button>
+            <Button id="btnTabControls" class="settings-tab"><Text id="txtTabControls" class="settings-tab-text" text="CONTROLS" /></Button>
+        </Stack>
+
+        <Stack id="stkGraphics" direction="vertical" spacing="14" size="500 180" anchor="0.5 0.5" hotSpot="0.5 0.5" offset="0 4">
+            <Text id="txtVSyncLabel" class="settings-label" text="VSync" />
+            <Stack id="stkVSync" direction="horizontal" spacing="8" size="370 28">
+                <Button id="btnVSyncOff" class="settings-option"><Text id="txtVSyncOff" class="settings-option-text" text="OFF" /></Button>
+                <Button id="btnVSyncOn" class="settings-option"><Text id="txtVSyncOn" class="settings-option-text" text="ON" /></Button>
+                <Button id="btnVSyncAdaptive" class="settings-option"><Text id="txtVSyncAdaptive" class="settings-option-text" text="ADAPTIVE" /></Button>
+            </Stack>
+            <Text id="txtWindowModeLabel" class="settings-label" text="Window Mode" />
+            <Stack id="stkWindowMode" direction="horizontal" spacing="8" size="370 28">
+                <Button id="btnWindowed" class="settings-option"><Text id="txtWindowed" class="settings-option-text" text="WINDOWED" /></Button>
+                <Button id="btnBorderless" class="settings-option"><Text id="txtBorderless" class="settings-option-text" text="BORDERLESS" /></Button>
+                <Button id="btnFullscreen" class="settings-option"><Text id="txtFullscreen" class="settings-option-text" text="FULLSCREEN" /></Button>
+            </Stack>
+        </Stack>
+
+        <Stack id="stkGameplay" direction="vertical" spacing="10" size="500 180" anchor="0.5 0.5" hotSpot="0.5 0.5" offset="0 4" visible="false">
+            <Text id="txtGameplayPlaceholder" class="settings-label" text="No gameplay options are exposed yet." />
+        </Stack>
+
+        <Stack id="stkAudio" direction="vertical" spacing="10" size="500 180" anchor="0.5 0.5" hotSpot="0.5 0.5" offset="0 4" visible="false">
+            <Text id="txtAudioPlaceholder" class="settings-label" text="Audio controls will appear when the audio system is connected." />
+        </Stack>
+
+        <Stack id="stkControls" direction="vertical" spacing="14" size="500 180" anchor="0.5 0.5" hotSpot="0.5 0.5" offset="0 4" visible="false">
+            <Text id="txtPromptFamilyLabel" class="settings-label" text="Controller Glyphs" />
+            <Stack id="stkPromptFamily" direction="horizontal" spacing="7" size="493 28">
+                <Button id="btnPromptAuto" class="settings-option"><Text id="txtPromptAuto" class="settings-option-text" text="AUTO" /></Button>
+                <Button id="btnPromptXbox" class="settings-option"><Text id="txtPromptXbox" class="settings-option-text" text="XBOX" /></Button>
+                <Button id="btnPromptPlayStation" class="settings-option"><Text id="txtPromptPlayStation" class="settings-option-text" text="PLAYSTATION" /></Button>
+                <Button id="btnPromptNintendo" class="settings-option"><Text id="txtPromptNintendo" class="settings-option-text" text="NINTENDO" /></Button>
+            </Stack>
+        </Stack>
+
+        <Button id="btnBack" class="settings-option" size="100 28" anchor="0.5 0.5" hotSpot="0.5 0.5" offset="0 126">
+            <Text id="txtBack" class="settings-option-text" size="100 15" text="BACK" />
+        </Button>
+    </Layout>
+</UiDocument>
